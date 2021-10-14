@@ -6,17 +6,10 @@
     padding: 0;
 }
 
-#main {
-    display: grid;
-    grid-template-columns: 80%;
-    grid-template-rows: auto;
-}
-
 #body {
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: auto;
-    width: 80%;
     height: auto;
     margin: 10px auto;
     padding: 10px 0;
@@ -24,10 +17,11 @@
 
 .bannier {
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 40% 40%;
     grid-template-rows: 100%;
+    justify-content: center;
     height: 250px;
-    background-color: #caeaee;
+    background-color: rgba(255, 145, 0, 0.658);
     padding: 30px;
 }
 
@@ -58,6 +52,14 @@
     height: 30px;
 }
 
+.btn-login {
+    display: flex;
+}
+
+.btn-inscription {
+    padding: 19px 20px;
+}
+
 .btnSub {
     cursor: pointer;
     display: flex;
@@ -65,17 +67,12 @@
     align-items: center;
     width: 70px;
     height: 30px;
-    background-color: #569098;
+    border: 2px solid rgb(0, 0, 0);
     margin-top: 20px;
     font-family: 'Quicksand', sans-serif;
 }
 
-.btn_form {
-    display: flex;
-}
-
 .singin {
-    padding: 20px;
     cursor: pointer;
     margin: 10px 0!important;
     font-size: 12px;
@@ -88,9 +85,10 @@
 
 .sec1 {
     display: grid;
-    grid-template-columns: 100%;
+    grid-template-columns: 80%;
     grid-template-rows: 20% 80%;
-    background-color: #42585B;
+    justify-content: center;
+    background-color: black;
     height: 200px;
 }
 
@@ -101,7 +99,7 @@
 }
 
 .sec1 .title p {
-    color: rgba(255, 255, 255, 0.863);
+    color: white;
     font-size: 24px;
     font-family: 'Nunito', sans-serif;
 }
@@ -116,10 +114,18 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(196, 196, 196, 0.20);
+    background-color: white;
     width: 180px;
     height: 120px;
-    box-shadow: 10px 10px #caeaee;
+    transition: 0.4s;
+    border: 3px solid #caeaee;
+    box-shadow: -5px 5px rgba(255, 145, 0, 0.658);
+}
+
+.sec1 .elements .element:hover {
+    transition: 0.4s;
+    border: 3px solid rgba(255, 145, 0, 0.658);
+    box-shadow: -10px 10px rgba(255, 145, 0, 0.658);
 }
 
 .sec1 .elements .element div {
@@ -131,15 +137,16 @@
 }
 
 .sec1 .elements .element div p {
-    color: white;
+    color: black;
     font-size: 14px;
     font-family: 'Nunito', sans-serif;
 }
 
 .sec2 {
     display: grid;
-    grid-template-columns: 100%;
+    grid-template-columns: 80%;
     grid-template-rows: 50% 50%;
+    justify-content: center;
     height: 400px;
 }
 
@@ -189,9 +196,10 @@
 
 .sec3 {
     display: grid;
-    grid-template-columns: 100%;
+    grid-template-columns: 80%;
     grid-template-rows: 20% 80%;
-    background-color: #42585B;
+    justify-content: center;
+    background-color: rgba(255, 145, 0, 0.658);
     height: 250px;
     margin: 10px 0;
 }
@@ -203,7 +211,7 @@
 }
 
 .sec3 .title p {
-    color: rgba(255, 255, 255, 0.863);
+    color: rgba(7, 7, 7, 0.863);
     font-size: 24px;
     font-family: 'Nunito', sans-serif;
 }

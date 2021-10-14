@@ -1,0 +1,88 @@
+*,
+ ::before,
+ ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.textStatu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 100px;
+    margin: 300px auto;
+}
+
+.textStatu p {
+    font-size: 40px;
+    color: #405052;
+    font-family: 'Nunito', sans-serif;
+}
+
+
+/*#main {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+    justify-content: center;
+    background-color: yellow;
+    ;
+}*/
+
+.contenaire {
+    padding: 100%;
+}
+
+a {
+    text-transform: none;
+}
+
+.login {
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+}
+
+.text-singin p {
+    font-size: 12px;
+    color: red;
+}
+
+.login input {
+    width: 300px;
+    height: 40px;
+}
+
+.btn-login {
+    display: grid;
+    grid-template-columns: auto;
+}
+
+.btnSub {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    height: 30px;
+    border: 2px solid rgb(0, 0, 0);
+    margin-top: 20px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.singin {
+    cursor: pointer;
+    margin: 10px 0!important;
+    font-size: 12px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+:required {
+    background-color: rgb(250, 246, 246);
+}
+
+.btn {
+    width: 50%;
+}
